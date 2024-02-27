@@ -5,13 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93814076-b8f2-4fad-bb3e-83355c0b0081" name="Changes" comment="..">
-      <change afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/DLLStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/ListFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/SLLStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/PruebaDeUso.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/StackFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/datos" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/DLL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/DLL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/DLLStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/DLLStack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/SLL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/SLL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/UvgList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/UvgList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/SLLStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/SLLStack.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +47,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.App.executor": "Run",
     "Application.InfixToPostfix.executor": "Run",
+    "Application.PruebaDeUso.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "Maven.HDT4_calcPrefixPatronesDiseno [clean].executor": "Run",
     "Maven.HDT4_calcPrefixPatronesDiseno [compile].executor": "Run",
@@ -64,7 +68,20 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="uvg.edu.gt.App" />
+      <module name="HDT4_calcPrefixPatronesDiseno" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uvg.edu.gt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="InfixToPostfix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="uvg.edu.gt.InfixToPostfix" />
       <module name="HDT4_calcPrefixPatronesDiseno" />
@@ -78,8 +95,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PruebaDeUsoSinArchivoText" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="uvg.edu.gt.PruebaDeUsoSinArchivoText" />
+      <module name="HDT4_calcPrefixPatronesDiseno" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uvg.edu.gt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.App" />
+        <item itemvalue="Application.PruebaDeUsoSinArchivoText" />
         <item itemvalue="Application.InfixToPostfix" />
       </list>
     </recent_temporary>
@@ -119,7 +151,23 @@
       <option name="project" value="LOCAL" />
       <updated>1708924664462</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="..">
+      <option name="closed" value="true" />
+      <created>1709004217286</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1709004217286</updated>
+    </task>
+    <task id="LOCAL-00004" summary="..">
+      <option name="closed" value="true" />
+      <created>1709004225077</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1709004225077</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

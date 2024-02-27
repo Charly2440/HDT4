@@ -9,29 +9,35 @@ public class DLLStack<T> implements UvgStack<T>{
      * Constructor que inicializa la pila usando listas enlazadas dobles.
      */
     public DLLStack() {
-        ListFactory<T> ListFact = new ListFactory<>();
-        this.dll = ListFact.crearLista(2);
+        ListFactory<T> listFactory = new ListFactory<>();
+        this.dll = listFactory.crearLista(2);
     }
 
     @Override
     public T top() {
+        if (isEmpty()) {
+            return null;
+        }
         return dll.search(0).getData();
     }
 
     @Override
     public void push(T obj) {
-        Node<T> nodo = new Node<>();
-        nodo.setData(obj);
-        dll.add(nodo);
+        Node<T> node = new Node<>();
+        node.setData(obj);
+        dll.add(node);
     }
 
     @Override
     public T pop() {
+        if (isEmpty()) {
+            return null;
+        }
         return dll.delete().getData();
     }
 
     @Override
     public boolean isEmpty() {
-        return this.dll.size() == -1;
+        return this.dll.size() == 0;
     }
 }

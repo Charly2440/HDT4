@@ -13,23 +13,29 @@ public class SLLStack<T> implements UvgStack<T>{
 
     @Override
     public T top() {
+        if (isEmpty()) {
+            return null;
+        }
         return sll.search(0).getData();
     }
 
     @Override
     public void push(T obj) {
-        Node<T> nodo = new Node<>();
-        nodo.setData(obj);
-        sll.add(nodo);
+        Node<T> node = new Node<>();
+        node.setData(obj);
+        sll.add(node);
     }
 
     @Override
     public T pop() {
+        if (isEmpty()) {
+            return null;
+        }
         return sll.delete().getData();
     }
 
     @Override
     public boolean isEmpty() {
-        return this.sll.size() == -1;
+        return this.sll.size() == 0;
     }
 }
