@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93814076-b8f2-4fad-bb3e-83355c0b0081" name="Changes" comment="Merge remote-tracking branch 'main/master'" />
+    <list default="true" id="93814076-b8f2-4fad-bb3e-83355c0b0081" name="Changes" comment="Tests" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -197,7 +197,31 @@
       <option name="project" value="LOCAL" />
       <updated>1709013214328</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Merge remote-tracking branch 'main/master'">
+      <option name="closed" value="true" />
+      <created>1709013255735</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1709013255735</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Tests">
+      <option name="closed" value="true" />
+      <created>1709013273844</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1709013273844</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Tests">
+      <option name="closed" value="true" />
+      <created>1709013280386</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1709013280386</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,6 +242,7 @@
     <MESSAGE value=".." />
     <MESSAGE value="Calculadora terminada" />
     <MESSAGE value="Merge remote-tracking branch 'main/master'" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'main/master'" />
+    <MESSAGE value="Tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tests" />
   </component>
 </project>
