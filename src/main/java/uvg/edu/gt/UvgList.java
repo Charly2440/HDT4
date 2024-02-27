@@ -21,13 +21,11 @@ public interface UvgList<T> {
     /**
      * Elimina el elemento en la posicion designada, el ultimo por default
      *
-     * @param obj objeto a ser agregado, nodo
-     * @param index indice posicion ha ser eliminada, index=size()-1 por default
      *
      * @return El nodo que se está eliminando
      *
      */
-    public Node<T> delete(Node<T> obj, int index);
+    public Node<T> delete();
 
     /**
      * Verifica el tamaño de la lista

@@ -26,7 +26,7 @@ public class SLL<T> implements UvgList<T> {
     }
 
     @Override
-    public Node<T> delete(Node obj, int index) {
+    public Node<T> delete() {
         Node<T> next = head.getNext();
         Node<T> prev = null;
         if (this.size > -1){
@@ -61,6 +61,17 @@ public class SLL<T> implements UvgList<T> {
 
     @Override
     public Node<T> search(int index) {
-        return null;
+        Node<T> cur = null;
+        if (index < this.size-1){
+            int i = 0;
+            while (i <= index){
+                cur = head.getNext();
+                i++;
+            }
+            return cur;
+        }
+        else{
+            return null;
+        }
     }
 }
