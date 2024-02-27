@@ -5,53 +5,53 @@ public class SLL<T> implements UvgList<T> {
     private int size;
 
     public SLL() {
-        Node<T> head = new Node<>();
-        this.size = -1;
+        this.head = null;
+        this.size = 0;
     }
 
     @Override
     public void add(Node<T> obj) {
-        Node<T> next = head.getNext();
-        if (this.size > -1){
-            while (next != null){
-                next = next.getNext();
+        if (this.head == null) {
+            this.head = obj;
+        } else {
+            Node<T> current = this.head;
+            while (current.getNext() != null) {
+                current = current.getNext();
             }
-            next = obj;
-            size++;
+            current.setNext(obj);
         }
-        else{
-            next = obj;
-            size++;
-        }
+        size++;
     }
 
     @Override
     public Node<T> delete() {
-        Node<T> next = head.getNext();
-        Node<T> prev = null;
-        if (this.size > -1){
-            while (next != null){
-                prev = next;
-                next = next.getNext();
-            }
-            Node<T> eliminado = next;
-            prev = next;
-            size--;
-            return eliminado;
-        }
-        else{
+        if (this.size == 0) {
             return null;
         }
+        Node<T> current = this.head;
+        Node<T> prev = null;
+        while (current.getNext() != null) {
+            prev = current;
+            current = current.getNext();
+        }
+        if (prev != null) {
+            prev.setNext(null);
+        } else {
+            this.head = null;
+        }
+        size--;
+        return current;
     }
 
     @Override
     public String traverse() {
-        StringBuilder dllString = new StringBuilder();
-        int i = 0;
-        while (i<=this.size){
-            dllString.append(" ").append(this.head.toString());
+        StringBuilder sllString = new StringBuilder();
+        Node<T> current = this.head;
+        while (current != null) {
+            sllString.append(" ").append(current.toString());
+            current = current.getNext();
         }
-        return dllString.toString();
+        return sllString.toString();
     }
 
     @Override
@@ -61,17 +61,13 @@ public class SLL<T> implements UvgList<T> {
 
     @Override
     public Node<T> search(int index) {
-        Node<T> cur = null;
-        if (index < this.size-1){
-            int i = 0;
-            while (i <= index){
-                cur = head.getNext();
-                i++;
-            }
-            return cur;
-        }
-        else{
+        if (index < 0 || index >= this.size) {
             return null;
         }
+        Node<T> current = this.head;
+        for (int i = 0; i < index; i++) {
+            current = current.getNext();
+        }
+        return current;
     }
 }
